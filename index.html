@@ -17,6 +17,7 @@
 <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
 <link rel="stylesheet" type="text/csss" href="revolution/css/navigation.css">
 <link rel="stylesheet" type="text/csss" href="revolution/css/mycss.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
@@ -24,7 +25,8 @@
 
 <!-- CUSTOM CSS -->
 <style type="text/css">body{margin: 0}.bm-gradient{background:-webkit-linear-gradient(left,#2ac3ff 0%,#ffdb4f 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.bm-gradient2{background:-webkit-linear-gradient(left,#452aff 0%,#45ffff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.bm-gradient3{background:-webkit-linear-gradient(left,#4f00f6 0%,#b000f7 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}</style>
-<style type="text/css">.hermes.tp-bullets{}.hermes .tp-bullet{overflow:hidden;  border-radius:50%;  width:16px;  height:16px;  background-color:rgba(0,0,0,0);  box-shadow:inset 0 0 0 2px rgb(204,204,204);  -webkit-transition:background 0.3s ease;  transition:background 0.3s ease;  position:absolute}.hermes .tp-bullet:hover{background-color:rgba(204,204,204,1)}.hermes .tp-bullet:after{content:' '; position:absolute; bottom:0; height:0; left:0; width:100%; background-color:rgb(204,204,204); box-shadow:0 0 1px rgb(204,204,204); -webkit-transition:height 0.3s ease; transition:height 0.3s ease}.hermes .tp-bullet.selected:after{height:100%}
+<style type="text/css">
+.hermes.tp-bullets{}.hermes .tp-bullet{overflow:hidden;  border-radius:50%;  width:16px;  height:16px;  background-color:rgba(0,0,0,0);  box-shadow:inset 0 0 0 2px rgba(204, 204, 204, 0);  -webkit-transition:background 0.3s ease;  transition:background 0.3s ease;  position:absolute}.hermes .tp-bullet:hover{background-color:rgba(204, 204, 204, 0)}.hermes .tp-bullet:after{content:' '; position:absolute; bottom:0; height:0; left:0; width:100%; background-color:rgba(204, 204, 204, 0); box-shadow:0 0 1px rgb(204,204,204); -webkit-transition:height 0.3s ease; transition:height 0.3s ease}.hermes .tp-bullet.selected:after{height:100%}
 
 
 
@@ -91,6 +93,44 @@
     background: linear-gradient(left, rgba(248,87,166,1) 0%,rgba(255,88,88,1) 100%);
 }
 
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	/* box-shadow: 2px 2px 3px #999; */
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+.slider {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
 	
 </style>
 
@@ -104,6 +144,9 @@
   </div>
 </div> -->
 <!--== Loader End ==-->
+<a href="https://wa.link/dsvcv8" class="float" target="_blank">
+	<i class="fa fa-whatsapp my-float"></i>
+	</a>
 
 <!--== Wrapper Start ==-->
 <div class="wrapper">
@@ -525,6 +568,8 @@
   </section>
   <!--== Hero Slider End ==-->
   <!--== Video Start ==-->
+
+
   <section class="parallax-bg fixed-bg" data-parallax-bg-image="assets/img/7.jpeg" data-parallax-speed="0.8" data-parallax-direction="up" id="bottom">
     <div class="overlay-bg"></div>
   	<div class="container">
@@ -1359,6 +1404,25 @@
 			}
 		})
 	})
+</script>
+<script>
+	$(document).ready(function() {
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var slides = $(".slide");
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active");
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex-1].classList.add("active");
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+  }
+});
 </script>
 
 <script src="assets/js/jquery.min.js"></script>
