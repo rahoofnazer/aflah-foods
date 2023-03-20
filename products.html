@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="Designsninja">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Areen Aflah - Our Products</title>
-<link rel="shortcut icon" href="assets/img/icon.jpg">
+<link rel="shortcut icon" href="assets/img/icon.png">
 
 <!-- Core Style Sheets -->
 <link rel="stylesheet" href="assets/css/master.css">
 <!-- Responsive Style Sheets -->
 <link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 <!-- Revolution Style Sheets -->
 <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
 <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
@@ -34,6 +35,86 @@
     padding-bottom: 40px;
 }
 
+
+
+
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+
+
+/* Content */
+.content {
+  width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.062), 0 6px 20px 0 rgba(0, 0, 0, 0.048);
+    padding: 35px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.bb {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  font-size: large;
+}
+
+/* Add a grey background color on mouse-over */
+.bb:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.bb.active {
+  background-color: #666;
+   color: white;
+}
+.whatsapp-float {
+			position: fixed;
+			bottom: 20px;
+			width: 60px;
+    height: 60px;
+			left: 20px;
+			z-index: 99;
+			background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+		}
+		@media (max-width: 768px) {
+			.whatsapp-float {
+			    bottom: 31px;
+    left: 25px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+			}
+		}
 </style>
 <body>
 
@@ -111,7 +192,7 @@
 
     <!-- Start Side Menu -->
     <!-- <div class="side dark-bg">
-  		  <a href="index.html" class="logo-side"><img src="assets/images/logo-sidemenu.jpg" alt="side-logo"/></a>
+  		  <a href="index.html" class="logo-side"><img src="assets/images/logo-sidemenu.png" alt="side-logo"/></a>
         <a href="#" class="close-side"><i class="icofont icofont-close"></i></a>
         <div class="widget mt-120">
           <ul class="link">
@@ -135,7 +216,7 @@
 
   </nav>
   <!--== Header End ==-->
-
+ 
   <!--== Hero Slider Start ==-->
   <section class="remove-padding transition-none">
   <div id="rev_slider_landing_custom_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export" data-source="gallery" style="margin:0px auto;background-color:#1c1139;padding:0px;margin-top:0px;margin-bottom:0px;">
@@ -144,7 +225,7 @@
 <ul>	<!-- SLIDE  -->
 	<li data-index="rs-3046" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Parallax" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 		<!-- MAIN IMAGE -->
-		<img src="assets/img/bg2.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+		<img src="assets/img/bg2.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 		<!-- LAYERS -->
 
 		<!-- LAYER NR. 4 -->
@@ -309,118 +390,80 @@
 </div>
 </div>
   </section>
+
+  <a href="https://wa.link/dsvcv8" target="_blank" class="whatsapp-float">
+    <i style="margin-top: 15px;" class="fa fa-whatsapp my-float"></i>
+  </a>
   <!--== Hero Slider End ==-->
 
-  
-
-  
-  <!--== Portfolio Start ==-->
   <section class="white-bg dark-block" id="product">
   	<div class="container">
+      
       <div class="row">
-        <div class="col-sm-8 section-heading">
-       		  <h5 class="default-color mt-0 text-uppercase">Our Products.</h5>
-            <h2 class="mt-0 font-700">WHAT WE SERVE & DELIVER.</h2>
-        </div>
-      </div>
-    	<div class="row mt-50">
-        	<div class="col-md-12">
-            	<div id="portfolio-gallery-filter" class="cbp-l-filters-alignCenter text-sm-center mb-50">
-                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item dark">
-                    All
-                </div>
-                <div data-filter=".bakes" class="cbp-filter-item">
-                    Aflah Bakes
-                </div>
-                <div data-filter=".foods" class="cbp-filter-item">
-                  Aflah Foods
-                </div>
-                <div data-filter=".retail" class="cbp-filter-item">
-                  Aflah Spice Retail Solutions
-                </div>
-                <div data-filter=".spice" class="cbp-filter-item">
-                  Aflah Spice
-                </div>
-            
-            </div>
-            </div>
+        <div class="container">
+          <div class="col-sm-8 section-heading">
+            <h5 class="default-color mt-0 text-uppercase">Our Products.</h5>
+           <h2 class="mt-0 font-700">WHAT WE SERVE & DELIVER.</h2><br>
+       </div>
+       <center>
+  <div id="myBtnContainer">
+    <button class="bb active" onclick="filterSelection('all')">All</button>
+    <button class="bb" onclick="filterSelection('bakes')">Aflah Bakes</button>
+    <button class="bb" onclick="filterSelection('foods')">Aflah Foods</button>
+    <button class="bb" onclick="filterSelection('retails')">Aflah Spice Retail Solutions</button>
+    <button class="bb" onclick="filterSelection('spices')">Aflah Spice</button>
+  </div>
+</center>
+  </div>
+  <br><br>
+  
+  <div class="container">
+    <div class="container">
 
-            <div class="col-md-12">
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
 
-            <div id="portfolio-gallery" class="cbp">
-
+    
             <!---------BAKES---------------------->
               <!---------Areen Special Cream Buns---------------------->
-                <div class="cbp-item bakes col-md-4 col-sm-6 with-spacing text-center">
-                    <div class="cbp-caption">
-                        <div class="cbp-caption-defaultWrap">
-                        	<img src="assets/img/bakes/b1.jpg"  alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap dark">
-                            <div class="cbp-l-caption-alignCenter">
-                                <div class="cbp-l-caption-body">
-  
-                            		<a href="assets/img/bakes/b1.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Liquid Creamer Original"><i class="icofont icofont-search"></i></a>
-                                </div>
-                            </div>
-                       	 </div>
-                    </div>
-                    <div class="cbp-l-grid-projects-title dark-color font-700">Areen Special<br> Cream Buns</div>
-           			    <br>
-                       <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1 PKG</b></a>
-                <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>2.50AED</b></a>
-                <br><br>
-                
-       
-                 <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Special%20Cream%20Buns%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-            </div>
-   <!---------BAKES---------------------->
+    <div class="column col-md-4 col-sm-6 bakes">
+      <div class="content">
+
+        <img src="assets/img/bakes/b1.png" alt="Mountains" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Special Cream Buns</div><br>
+        <br>
+          <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1 PKG</b></a>
+   <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>2.50AED</b></a>
+   <br><br>
+   
+
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Special%20Cream%20Buns%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+
+      </div>
+    </div>
 
 
       <!---------FOODS---------------------->
 
+
              <!---------Areen Liquid Creamer  Cardamom---------------------->
-             <div class="cbp-item foods col-md-4 col-sm-6 with-spacing text-center">
-              <div class="cbp-caption">
-                  <div class="cbp-caption-defaultWrap">
-                    <img src="assets/img/foods/f1.jpg"  alt="">
-                  </div>
-                  <div class="cbp-caption-activeWrap dark">
-                      <div class="cbp-l-caption-alignCenter">
-                          <div class="cbp-l-caption-body">
-
-                          <a href="assets/img/foods/f1.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Liquid Creamer  Cardamom"><i class="icofont icofont-search"></i></a>
-                          </div>
-                      </div>
-                    </div>
-              </div>
-              <div class="cbp-l-grid-projects-title dark-color font-700">Areen Liquid <br>Creamer Cardamom</div>
-               <br>
-                 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
-          <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>10.25AED</b></a>
-          <br><br>
-          
- 
-           <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Liquid%20Creamer%20%20Cardamom - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+    <div class="column col-md-4 col-sm-6 foods">
+      <div class="content">
+        <img src="assets/img/foods/f1.png" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Liquid <br>Creamer Cardamom</div>
+        <br>
+          <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
+   <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>10.25AED</b></a>
+   <br><br>
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Liquid%20Creamer%20%20Cardamom - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
       </div>
-
+    </div>
 
                <!---------Areen Milk Powder ---------------------->
-                    <div class="cbp-item foods col-md-4 col-sm-6 with-spacing text-center">
-                    <div class="cbp-caption">
-                        <div class="cbp-caption-defaultWrap">
-                        	<img src="assets/img/foods/f3.jpg"  alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap dark">
-                            <div class="cbp-l-caption-alignCenter">
-                                <div class="cbp-l-caption-body">
-  
-                            		<a href="assets/img/foods/f3.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Milk Powder"><i class="icofont icofont-search"></i></a>
-                                </div>
-                            </div>
-                       	 </div>
-                    </div>
-                    <div class="cbp-l-grid-projects-title dark-color font-700">Areen Milk Powder</div><br>
+    <div class="column col-md-4 col-sm-6 foods">
+      <div class="content">
+        <img src="assets/img/foods/f3.png" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Milk Powder</div><br><br>
            			    <br>
                        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>400G</b></a>
                 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>10.25AED</b></a>
@@ -428,131 +471,83 @@
                 
        
                  <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Milk%20Powder - 400G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-            </div>
-
-             <!---------Tea Powder  ---------------------->
-             <div class="cbp-item foods col-md-4 col-sm-6 with-spacing text-center">
-              <div class="cbp-caption">
-                  <div class="cbp-caption-defaultWrap">
-                    <img src="assets/img/foods/f2.jpg"  alt="">
-                  </div>
-                  <div class="cbp-caption-activeWrap dark">
-                      <div class="cbp-l-caption-alignCenter">
-                          <div class="cbp-l-caption-body">
-
-                          <a href="assets/img/foods/f2.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Tea Powder"><i class="icofont icofont-search"></i></a>
-                          </div>
-                      </div>
-                    </div>
-              </div>
-              <div class="cbp-l-grid-projects-title dark-color font-700">Tea Powder </div><br>
-               <br>
-                 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>5 KG</b></a>
-          <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>78.49AED</b></a>
-          <br><br>
-          
- 
-           <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Tea%20Powder - 5KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
       </div>
+    </div>
 
+   <!---------Tea Powder  ---------------------->
+    <div class="column col-md-4 col-sm-6 foods">
+      <div class="content">
 
+        <img src="assets/img/foods/f2.png" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Tea Powder </div><br>
+        <br>
+          <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>5 KG</b></a>
+   <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>78.49AED</b></a>
+   <br><br>
+   
+
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Tea%20Powder - 5KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+
+      </div>
+    </div>
 
 <!-------------------------------------Aflah Spice Retail Solutions---------------------->
 
 <!---------1. Areen Dynamite Sauce---------------------->
-                <div class="cbp-item retail web-design col-md-4 col-sm-6 with-spacing text-center">
-                   	<div class="cbp-caption">
-                        <div class="cbp-caption-defaultWrap">
-                        	<img src="assets/img/retails/1.jpg" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap dark">
-                            <div class="cbp-l-caption-alignCenter">
-                                <div class="cbp-l-caption-body">
-  
-                            		<a href="assets/img/retails/1.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Dynamite Sauce"><i class="icofont icofont-search"></i></a>
-                                </div>
-                            </div>
-                       	 </div>
-                    </div>
-                    <div class="cbp-l-grid-projects-title dark-color font-700">Areen Dynamite Sauce</div><br>
-                <br>
-                <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
-                <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>19.55AED</b></a>
-                <br><br>
-                
-       
-                 <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Dynamite%20Sauce - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-                </div>
+
+    <div class="column col-md-4 col-sm-6 retails">
+      <div class="content">
+        <img src="assets/img/retails/1.png" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Dynamite Sauce</div><br>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>19.55AED</b></a>
+        <br><br>
+
+         <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Dynamite%20Sauce - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+      </div>
+    </div>
 
 
 <!---------2. Areen Butter Chicken Curry  Paste---------------------->
-                    <div class="cbp-item retail web-design col-md-4 col-sm-6 with-spacing text-center">
-                      <div class="cbp-caption">
-                         <div class="cbp-caption-defaultWrap">
-                           <img src="assets/img/retails/2.jpg" alt="">
-                         </div>
-                         <div class="cbp-caption-activeWrap dark">
-                             <div class="cbp-l-caption-alignCenter">
-                                 <div class="cbp-l-caption-body">
-   
-                                 <a href="assets/img/retails/2.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Butter Chicken Curry  Paste"><i class="icofont icofont-search"></i></a>
-                                 </div>
-                             </div>
-                           </div>
-                     </div>
-                     <div class="cbp-l-grid-projects-title dark-color font-700">Areen Butter<br> Chicken Curry  Paste</div>
-                 <br>
-                 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
-                 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
-                 <br><br>
-                 
+    <div class="column col-md-4 col-sm-6 retails">
+      <div class="content">
+        <img src="assets/img/retails/2.png" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Butter<br> Chicken Curry  Paste</div>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
+        <br><br>
         
-                  <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Butter%20Chicken%20Curry%20%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-                 </div>
+
+         <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Butter%20Chicken%20Curry%20%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+       
+      </div>
+    </div>
 
 
 <!---------3. Areen Charcoal Red Masala Paste---------------------->
-                 <div class="cbp-item retail web-design col-md-4 col-sm-6 with-spacing text-center">
-                  <div class="cbp-caption">
-                     <div class="cbp-caption-defaultWrap">
-                       <img src="assets/img/retails/3.jpg" alt="">
-                     </div>
-                     <div class="cbp-caption-activeWrap dark">
-                         <div class="cbp-l-caption-alignCenter">
-                             <div class="cbp-l-caption-body">
+    <div class="column col-md-4 col-sm-6 retails">
+      <div class="content">
+        <img src="assets/img/retails/3.png" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Charcoal Red <br>Masala Paste</div>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
+        <br><br>
+        
 
-                             <a href="assets/img/retails/3.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Charcoal Red Masala Paste"><i class="icofont icofont-search"></i></a>
-                             </div>
-                         </div>
-                       </div>
-                 </div>
-                 <div class="cbp-l-grid-projects-title dark-color font-700">Areen Charcoal Red <br>Masala Paste</div>
-             <br>
-             <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
-             <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
-             <br><br>
-             
-    
-              <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Charcoal%20Red%20Masala%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-             </div>
+         <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Charcoal%20Red%20Masala%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        
+      </div>
+    </div>
 
 
 <!---------4. Areen Meat  Curry Paste---------------------->
-<div class="cbp-item retail web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/retails/4.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/retails/4.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Meat  Curry Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Meat  Curry Paste</div>
+    <div class="column col-md-4 col-sm-6 retails">
+      <div class="content">
+        <img src="assets/img/retails/4.png" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Meat Curry Paste</div><br><br>
 <br>
 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
@@ -560,280 +555,182 @@
 
 
 <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Meat%20%20Curry%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>             
 
+      </div>
+    </div>
 
+    
 <!---------5. Areen Chicken Fry Paste---------------------->
-<div class="cbp-item retail web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/retails/5.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/retails/5.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Chicken Fry Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Chicken Fry Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Chicken%20Fry%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>       
+    <div class="column col-md-4 col-sm-6 retails">
+      <div class="content">
+        <img src="assets/img/retails/5.png" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Chicken Fry Paste</div><br><br>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Chicken%20Fry%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        
+      </div>
+    </div>
 
 
 <!---------6. Areen Chicken Fry Paste---------------------->
-<div class="cbp-item retail web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/retails/6.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
 
-             <a href="assets/img/retails/6.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Chicken Fry Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Chicken Fry Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Chicken%20Fry%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>    
-
+    <div class="column col-md-4 col-sm-6 retails">
+      <div class="content">
+        <img src="assets/img/retails/6.png" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Chicken Fry Paste</div><br><br>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Chicken%20Fry%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        
+      </div>
+    </div>
 
 
 <!---------7. Areen Charcoal Green Masala Paste---------------------->
-<div class="cbp-item retail web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/retails/7.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
 
-             <a href="assets/img/retails/7.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Charcoal Green Masala Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Charcoal Green <br>Masala Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Charcoal%20Green%20Masala%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div> 
+    <div class="column col-md-4 col-sm-6 retails">
+      <div class="content">
+        <img src="assets/img/retails/7.png" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Charcoal Green <br>Masala Paste</div>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Charcoal%20Green%20Masala%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        
+      </div>
+    </div>
 
 
 
 <!---------8. Areen Chicken Grill Paste---------------------->
-<div class="cbp-item retail web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/retails/8.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
+    <div class="column col-md-4 col-sm-6 retails">
+      <div class="content">
+        <img src="assets/img/retails/8.png" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Chicken Grill Paste</div><br><br>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>19.55AED</b></a>
+        <br><br>       
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Chicken%20Grill%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        
+      </div>
+    </div>
 
-             <a href="assets/img/retails/8.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Chicken Grill Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Chicken Grill Paste</div><br>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>19.55AED</b></a>
-<br><br>
+    <!---------9. Areen Fish Fry Paste---------------------->
 
+    <div class="column col-md-4 col-sm-6 retails">
+      <div class="content">
 
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Chicken%20Grill%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
-
-
-<!---------9. Areen Fish Fry Paste---------------------->
-<div class="cbp-item retail web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/retails/9.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/retails/9.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Fish Fry Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Fish Fry Paste</div>
-<br><br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Fish%20Fry%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
-
+        <img src="assets/img/retails/9.png" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Fish Fry Paste</div><br>
+        <br><br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Fish%20Fry%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>        
+        
+      </div>
+    </div>
 
 
 <!---------10. Areen Nadan Fish Curry Paste---------------------->
-<div class="cbp-item retail web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/retails/10.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
 
-             <a href="assets/img/retails/10.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Nadan Fish Curry Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Nadan Fish Curry Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Nadan%20Fish%20Curry%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
-
+    <div class="column col-md-4 col-sm-6 retails">
+      <div class="content">
+        <img src="assets/img/retails/10.png" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Nadan Fish Curry Paste</div><br><br>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
+        <br><br>       
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Nadan%20Fish%20Curry%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        
+      </div>
+    </div>
 
 
 <!---------11. Areen  Charcoal Pepper Masala Paste---------------------->
-<div class="cbp-item retail web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/retails/11.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/retails/11.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen  Charcoal Pepper Masala Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen  Charcoal Pepper Masala Paste</div>
+    <div class="column col-md-4 col-sm-6 retails">
+      <div class="content">
+        <img src="assets/img/retails/11.png" style="width:100%">
+       
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen  Charcoal Pepper<br> Masala Paste</div><br>
 <br>
 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
 <br><br>
-
-
 <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20%20Charcoal%20Pepper%20Masala%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
+
+      </div>
+    </div>
 
 
 <!---------12. Areen Coconut Fish Curry Paste---------------------->
-<div class="cbp-item retail web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/retails/12.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/retails/12.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Coconut Fish Curry Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Coconut Fish Curry Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
-<br><br>
+    <div class="column col-md-4 col-sm-6 retails">
+      <div class="content">
+        <img src="assets/img/retails/12.png" style="width:100%">
+       
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Coconut Fish<br> Curry Paste</div><br>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Coconut%20Fish%20Curry%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        
+      </div>
+    </div>
 
 
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Coconut%20Fish%20Curry%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
+    <!---------13. Areen Kadai Chicken Curry Paste---------------------->
 
+    <div class="column col-md-4 col-sm-6 retails">
+      <div class="content">
 
-
-
-
-<!---------13. Areen Kadai Chicken Curry Paste---------------------->
-<div class="cbp-item retail web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/retails/13.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/retails/13.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Kadai Chicken Curry Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Kadai Chicken Curry Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Kadai%20Chicken%20Curry%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div> 
-
-
-
+        <img src="assets/img/retails/13.png" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Kadai Chicken<br> Curry Paste</div><br>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Kadai%20Chicken%20Curry%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        
+        
+      </div>
+    </div>
 
 <!---------14. Areen Afghani Chicken Paste---------------------->
-<div class="cbp-item retail web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/retails/14.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/retails/14.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Afghani Chicken Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Afghani Chicken Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Afghani%20Chicken%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
+    <div class="column col-md-4 col-sm-6 retails">
+      <div class="content">
+        <img src="assets/img/retails/14.png" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Afghani<br> Chicken Paste</div><br><br>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Afghani%20Chicken%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        
+      </div>
+    </div>
 
 
 
@@ -841,24 +738,12 @@
 
 <!----------------SPICES--------------------------->
 
-
-
 <!---------1. Areen Kadai Chicken Curry Paste---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/1.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
 
-             <a href="assets/img/spices/1.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Kadai Chicken Curry Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Kadai Chicken Curry Paste</div>
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/1.jpg" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Kadai Chicken Curry Paste</div>
 <br>
 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
@@ -866,53 +751,32 @@
 
 
 <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Kadai%20Chicken%20Curry%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
 
-
+      </div>
+    </div>
 
 <!---------2. Areen Butter Chicken Curry  Paste---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/2.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
 
-             <a href="assets/img/spices/2.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Butter Chicken Curry  Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Butter Chicken Curry  Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Butter%20Chicken%20Curry%20%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
-
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/2.jpg" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Butter Chicken Curry  Paste</div>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Butter%20Chicken%20Curry%20%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        
+      </div>
+    </div>
 
 <!---------3. Areen Chicken Fry Paste---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/3.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/spices/3.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Chicken Fry Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Chicken Fry Paste</div>
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/3.jpg" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Chicken Fry Paste</div>
 <br>
 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
@@ -920,166 +784,105 @@
 
 
 <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Chicken%20Fry%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
 
+      </div>
+    </div>
 
 
 
 <!---------4. Areen Chicken Grill Paste---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/4.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
 
-             <a href="assets/img/spices/4.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Chicken Grill Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Chicken Grill Paste</div><br>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>19.55AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Chicken%20Grill%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
-
-
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/4.jpg" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Chicken Grill Paste</div><br>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>19.55AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Chicken%20Grill%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        
+      </div>
+    </div>
 
 
 <!---------5. Areen Afghani Chicken Curry Paste---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/5.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
 
-             <a href="assets/img/spices/5.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Afghani Chicken Curry Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Afghani Chicken<br> Curry Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Afghani%20Chicken%20Curry%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
-
-
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/5.jpg" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Afghani Chicken<br> Curry Paste</div>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>200G</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Afghani%20Chicken%20Curry%20Paste - 200G%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        </div>  
+        
+    </div>
+    
 
 <!---------6. Areen Coconut Fish Curry Paste---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/6.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
 
-             <a href="assets/img/spices/6.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Coconut Fish Curry Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Coconut Fish Curry Paste</div><br>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Coconut%20Fish%20Curry%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
-
-
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/6.jpg" style="width:100%">
+       
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Coconut Fish<br> Curry Paste</div><br>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Coconut%20Fish%20Curry%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        </div> 
+    </div>
 
 <!---------7. Areen Nadan Fish Curry Paste---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/7.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/spices/7.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Nadan Fish Curry Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Nadan Fish Curry Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Nadan%20Fish%20Curry%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/7.jpg" style="width:100%">
+       
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Nadan Fish Curry Paste</div>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Nadan%20Fish%20Curry%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        </div>  
+        
+    </div>
 
 
 <!---------8. Areen Fish Fry Paste---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/8.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
 
-             <a href="assets/img/spices/8.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Fish Fry Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Fish Fry Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
-<br><br>
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/8.jpg" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Fish Fry Paste</div>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Fish%20Fry%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        </div>  
+    </div>
+    
 
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Fish%20Fry%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
-
-
-<!---------9. Areen Meat  Curry Paste---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/9.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/spices/9.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Meat  Curry Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Meat  Curry Paste</div>
+    <!---------9. Areen Meat  Curry Paste---------------------->
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/9.jpg" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Meat  Curry Paste</div>
 <br>
 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
@@ -1088,189 +891,118 @@
 
 <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Meat%20%20Curry%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
 </div>  
+    </div>
 
 
+    <!---------10. Areen Charcoal Green Masala Paste---------------------->
 
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/10.jpg" style="width:100%">
+       
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Charcoal Green<br> Masala Paste</div>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Charcoal%20Green%20Masala%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        </div>  
+          </div>
 
-<!---------10. Areen Charcoal Green Masala Paste---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/10.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/spices/10.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Charcoal Green Masala Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Charcoal Green<br> Masala Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Charcoal%20Green%20Masala%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
-
-<!---------11. Areen  Charcoal Pepper Masala Paste---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/11.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/spices/11.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen  Charcoal Pepper Masala Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen  Charcoal Pepper<br> Masala Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20%20Charcoal%20Pepper%20Masala%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
+          <!---------11. Areen  Charcoal Pepper Masala Paste---------------------->
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/11.jpg" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen  Charcoal Pepper<br> Masala Paste</div>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20%20Charcoal%20Pepper%20Masala%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        </div>  
+        
+    </div>
 
 
 
 <!---------12. Areen Charcoal Red Masala Paste---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/12.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
 
-             <a href="assets/img/spices/12.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Charcoal Red Masala Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Charcoal Red<br> Masala Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Charcoal%20Red%20Masala%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
-
-
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/12.jpg" style="width:100%">
+       
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Charcoal Red<br> Masala Paste</div>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Charcoal%20Red%20Masala%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        </div>  
+            </div>
 
 
 <!---------13. Areen Egg Roast Masala---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/13.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
 
-             <a href="assets/img/spices/13.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Egg Roast Masala"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Egg Roast Masala</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Egg%20Roast%20Masala - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/13.jpg" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Egg Roast Masala</div><br><br>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Egg%20Roast%20Masala - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        </div> 
+    </div>
 
 
 <!---------14. Areen Shawarma Paste---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/14.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
 
-             <a href="assets/img/spices/14.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Shawarma Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Shawarma Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
-<br><br>
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/14.jpg" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Shawarma Paste</div><br><br>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>23.00AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Shawarma%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        </div>  
+    </div>
 
 
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Shawarma%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
-
-
-<!---------15. Areen Veg Korma Paste---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/15.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/spices/15.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Veg Korma Paste"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Veg Korma Paste</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Veg%20Korma%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
+    <!---------15. Areen Veg Korma Paste---------------------->
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/15.jpg" style="width:100%">
+       
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Veg Korma Paste</div><br><br>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>1KG</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>34.5AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Veg%20Korma%20Paste - 1KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        </div>  
+    </div>
 
 
 <!---------16. Areen Dynamite Sauce---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/16.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/spices/16.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Dynamite Sauce"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Dynamite Sauce</div>
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/16.jpg" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Dynamite Sauce</div>
 <br>
 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>4KG</b></a>
 <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>70AED</b></a>
@@ -1279,61 +1011,57 @@
 
 <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Dynamite%20Sauce - 4KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
 </div>  
-
-
+      </div>
+    </div>
+    
 
 
 <!---------17. Areen Mussels Pickles---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/17.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/spices/17.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Mussels Pickles"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Mussels Pickles</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>4KG</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>55AED</b></a>
-<br><br>
-
-
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Mussels%20Pickles - 4KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
-
-
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/17.jpg" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Mussels Pickles</div>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>4KG</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>55AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Mussels%20Pickles - 4KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        </div>  
+    </div>
 
 <!---------18. Areen Shrimp Pickles---------------------->
-<div class="cbp-item spice web-design col-md-4 col-sm-6 with-spacing text-center">
-  <div class="cbp-caption">
-     <div class="cbp-caption-defaultWrap">
-       <img src="assets/img/spices/18.jpg" alt="">
-     </div>
-     <div class="cbp-caption-activeWrap dark">
-         <div class="cbp-l-caption-alignCenter">
-             <div class="cbp-l-caption-body">
-
-             <a href="assets/img/spices/18.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Areen Shrimp Pickles"><i class="icofont icofont-search"></i></a>
-             </div>
-         </div>
-       </div>
- </div>
- <div class="cbp-l-grid-projects-title dark-color font-700">Areen Shrimp Pickles</div>
-<br>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>4KG</b></a>
-<a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>55AED</b></a>
-<br><br>
+    <div class="column col-md-4 col-sm-6 spices">
+      <div class="content">
+        <img src="assets/img/spices/18.jpg" style="width:100%">
+        <div class="cbp-l-grid-projects-title dark-color font-700">Areen Shrimp Pickles</div>
+        <br>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>4KG</b></a>
+        <a href="#!" class="btn btn-gradient btn-lg btn-square" style="border-width: 2px; border-color: black; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 8px;"><b>55AED</b></a>
+        <br><br>
+        
+        
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Shrimp%20Pickles - 4KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
+        </div>  
+    </div>
 
 
-<a target="_blank" href="https://api.whatsapp.com/send?phone=971555050978&text=Hi,%20I%20would%20like%20to%20buy%20your%20product%20%22Areen%20Shrimp%20Pickles - 4KG%22." class="btn btn-gradient btn-lg btn-square w-100" style="background-color: black; border-radius: 8px; width: 260px;">Buy Now</a>
-</div>  
+
+
+    
+  <!-- END GRID -->
+  </div> 
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+  
+
+    
 
 
 
@@ -1344,14 +1072,6 @@
        
 
 
-
-    		        </div>
-
-            </div>
-
-        </div>
-    </div>
-  </section>
   <!--== Portfolio End ==-->
 
  
@@ -1431,6 +1151,55 @@
 <!--== Wrapper End ==-->
 
 
+<script>
+  filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 
 <!--== Javascript Plugins ==-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJNGOwO2hJpJ9kz8e0UUPjZhEbgDJTTXE"></script>
