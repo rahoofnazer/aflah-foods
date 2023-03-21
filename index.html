@@ -7,6 +7,14 @@
 <title>Areen - Aflah</title>
 <link rel="shortcut icon" href="assets/img/icon.jpg">
 
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
+
+
 <!-- Core Style Sheets -->
 <link rel="stylesheet" href="assets/css/master.css">
 <!-- Responsive Style Sheets -->
@@ -17,7 +25,6 @@
 <link rel="stylesheet" type="text/csss" href="revolution/css/navigation.css">
 <link rel="stylesheet" type="text/csss" href="revolution/css/mycss.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 <link rel='stylesheet' href='revolution/css/revolution.addon.bubblemorph.css' type='text/css' media='all' />
@@ -92,44 +99,8 @@
     background: linear-gradient(left, rgba(248,87,166,1) 0%,rgba(255,88,88,1) 100%);
 }
 
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	/* box-shadow: 2px 2px 3px #999; */
-  z-index:100;
-}
 
-.my-float{
-	margin-top:16px;
-}
-.slider {
-  width: 100%;
-  height: 400px;
-  position: relative;
-  overflow: hidden;
-}
 
-.slide {
-  width: 100%;
-  height: 400px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.slide.active {
-  opacity: 1;
-}
 .whatsapp-float {
 			position: fixed;
 			bottom: 20px;
@@ -156,7 +127,62 @@
     font-size: 30px;
 			}
 		}
+
 	
+		.slider{
+  max-width: 1100px;
+  display: flex;
+}
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  background: #ffffff00;
+}
+.slider .card .img{
+  height: 370px;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.card .content .btn button{
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content .btn button:hover{
+  transform: scale(0.9);
+}
 </style>
 
 </head>
@@ -170,7 +196,7 @@
 </div> -->
 <!--== Loader End ==-->
 <a href="https://wa.link/dsvcv8" target="_blank" class="whatsapp-float">
-	<i class="fa fa-whatsapp my-float"></i>
+	<i style="margin-top: 15px;" class="fa fa-whatsapp my-float"></i>
 </a>
 
 <!--== Wrapper Start ==-->
@@ -784,321 +810,182 @@
 
 
 
+
+
    <!--== Video Start ==-->
    <section class="parallax-bg fixed-bg mt-0" data-parallax-bg-image="assets/img/7.jpeg" data-parallax-speed="0.8" data-parallax-direction="up" id="product">
     <div class="overlay-bg"></div>
 	<div class="container">
-	<div class="row">
-	  <div class="col-sm-8 section-heading">
-			   <h5 class="default-color mt-0 text-uppercase" style="font-family: Poppins;">What We Serve & Deliver</h5>
-		  <h2 class="mt-0 font-700" style="color: white;">Our <span class="gradient-color play-font font-800 font-italic">Products.</span></h2>
-	  </div>
-	</div>
-	
-	<div class="row">
-	  <div class="slick testimonial" hidden>
-
-		<!--------------Spices--------------------->
-
-		  <div class=" col-md-4 col-sm-6 col-xs-12">
-			  <!--== Slide ==-->
-			  <div class="testimonial-item" style="color: white;">
-				<img src="assets/img/spices/1.png" width="100%">
-				<!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-				<!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-			</center>
-		</div>
+		<div class="row">
+			<div class="col-sm-8 section-heading">
+					 <h5 class="default-color mt-0 text-uppercase" style="font-family: Poppins;">What We Serve & Deliver</h5>
+				<h2 class="mt-0 font-700" style="color: white;">Our <span class="gradient-color play-font font-800 font-italic">Products.</span></h2>
+			</div>
 		  </div>
 
-
-		  <div class=" col-md-4 col-sm-6 col-xs-12">
-			<!--== Slide ==-->
-			<div class="testimonial-item" style="color: white;">
-			  <img src="assets/img/spices/2.png" width="100%">
-			  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-			  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-		  </center>
-	  </div>
-		</div>
-
-		<div class=" col-md-4 col-sm-6 col-xs-12">
-			<!--== Slide ==-->
-			<div class="testimonial-item" style="color: white;">
-			  <img src="assets/img/spices/3.png" width="100%">
-			  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-			  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-		  </center>
-	  </div>
-		</div>
-
-		<div class=" col-md-4 col-sm-6 col-xs-12">
-			<!--== Slide ==-->
-			<div class="testimonial-item" style="color: white;">
-			  <img src="assets/img/spices/4.png" width="100%">
-			  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-			  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-		  </center>
-	  </div>
-		</div>
-
-		<div class=" col-md-4 col-sm-6 col-xs-12">
-			<!--== Slide ==-->
-			<div class="testimonial-item" style="color: white;">
-			  <img src="assets/img/spices/5.png" width="100%">
-			  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-			  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-		  </center>
-	  </div>
-		</div>
-
-		<div class=" col-md-4 col-sm-6 col-xs-12">
-			<!--== Slide ==-->
-			<div class="testimonial-item" style="color: white;">
-			  <img src="assets/img/spices/6.png" width="100%">
-			  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-			  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-		  </center>
-	  </div>
-		</div>
-
-		<div class=" col-md-4 col-sm-6 col-xs-12">
-			<!--== Slide ==-->
-			<div class="testimonial-item" style="color: white;">
-			  <img src="assets/img/spices/7.png" width="100%">
-			  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-			  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-		  </center>
-	  </div>
-		</div>
-
-		<div class=" col-md-4 col-sm-6 col-xs-12">
-			<!--== Slide ==-->
-			<div class="testimonial-item" style="color: white;">
-			  <img src="assets/img/spices/8.png" width="100%">
-			  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-			  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-		  </center>
-	  </div>
-		</div>
-
-		<div class=" col-md-4 col-sm-6 col-xs-12">
-			<!--== Slide ==-->
-			<div class="testimonial-item" style="color: white;">
-			  <img src="assets/img/spices/9.png" width="100%">
-			  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-			  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-		  </center>
-	  </div>
-		</div>
-
-		<div class=" col-md-4 col-sm-6 col-xs-12">
-			<!--== Slide ==-->
-			<div class="testimonial-item" style="color: white;">
-			  <img src="assets/img/spices/10.png" width="100%">
-			  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-			  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-		  </center>
-	  </div>
-		</div>
-
-		<div class=" col-md-4 col-sm-6 col-xs-12">
-			<!--== Slide ==-->
-			<div class="testimonial-item" style="color: white;">
-			  <img src="assets/img/spices/11.png" width="100%">
-			  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-			  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-		  </center>
-	  </div>
-		</div>
-
-		<div class=" col-md-4 col-sm-6 col-xs-12">
-			<!--== Slide ==-->
-			<div class="testimonial-item" style="color: white;">
-			  <img src="assets/img/spices/12.png" width="100%">
-			  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-			  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-		  </center>
-	  </div>
-		</div>
-
-		<div class=" col-md-4 col-sm-6 col-xs-12">
-			<!--== Slide ==-->
-			<div class="testimonial-item" style="color: white;">
-			  <img src="assets/img/spices/13.png" width="100%">
-			  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-			  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-		  </center>
-	  </div>
-		</div>
-
-		<div class=" col-md-4 col-sm-6 col-xs-12">
-			<!--== Slide ==-->
-			<div class="testimonial-item" style="color: white;">
-			  <img src="assets/img/spices/14.png" width="100%">
-			  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-			  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-		  </center>
-	  </div>
-		</div>
-
-		<div class=" col-md-4 col-sm-6 col-xs-12">
-			<!--== Slide ==-->
-			<div class="testimonial-item" style="color: white;">
-			  <img src="assets/img/spices/15.png" width="100%">
-			  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-			  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-		  </center>
-	  </div>
-		</div>
+		<div class="slider owl-carousel">
 
 
-	<!--------------Retails--------------------->
-
-	<div class=" col-md-4 col-sm-6 col-xs-12">
-		<!--== Slide ==-->
-		<div class="testimonial-item" style="color: white;">
-		  <img src="assets/img/retails/png/1.png" width="100%">
-		  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-		  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-	  </center>
-  </div>
-	</div>
-
-	<div class=" col-md-4 col-sm-6 col-xs-12">
-		<!--== Slide ==-->
-		<div class="testimonial-item" style="color: white;">
-		  <img src="assets/img/retails/png/2.png" width="100%">
-		  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-		  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-	  </center>
-  </div>
-	</div>
-
-
-	<div class=" col-md-4 col-sm-6 col-xs-12">
-		<!--== Slide ==-->
-		<div class="testimonial-item" style="color: white;">
-		  <img src="assets/img/retails/png/3.png" width="100%">
-		  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-		  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-	  </center>
-  </div>
-	</div>
-
-	<div class=" col-md-4 col-sm-6 col-xs-12">
-		<!--== Slide ==-->
-		<div class="testimonial-item" style="color: white;">
-		  <img src="assets/img/retails/png/4.png" width="100%">
-		  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-		  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-	  </center>
-  </div>
-	</div>
-
-	<div class=" col-md-4 col-sm-6 col-xs-12">
-		<!--== Slide ==-->
-		<div class="testimonial-item" style="color: white;">
-		  <img src="assets/img/retails/png/5.png" width="100%">
-		  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-		  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-	  </center>
-  </div>
-	</div>
-
-	<div class=" col-md-4 col-sm-6 col-xs-12">
-		<!--== Slide ==-->
-		<div class="testimonial-item" style="color: white;">
-		  <img src="assets/img/retails/png/6.png" width="100%">
-		  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-		  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-	  </center>
-  </div>
-	</div>
-
-	<div class=" col-md-4 col-sm-6 col-xs-12">
-		<!--== Slide ==-->
-		<div class="testimonial-item" style="color: white;">
-		  <img src="assets/img/retails/png/7.png" width="100%">
-		  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-		  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-	  </center>
-  </div>
-	</div>
-	<div class=" col-md-4 col-sm-6 col-xs-12">
-		<!--== Slide ==-->
-		<div class="testimonial-item" style="color: white;">
-		  <img src="assets/img/retails/png/8.png" width="100%">
-		  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-		  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-	  </center>
-  </div>
-	</div>
-	<div class=" col-md-4 col-sm-6 col-xs-12">
-		<!--== Slide ==-->
-		<div class="testimonial-item" style="color: white;">
-		  <img src="assets/img/retails/png/9.png" width="100%">
-		  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-		  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-	  </center>
-  </div>
-	</div>
-	<div class=" col-md-4 col-sm-6 col-xs-12">
-		<!--== Slide ==-->
-		<div class="testimonial-item" style="color: white;">
-		  <img src="assets/img/retails/png/10.png" width="100%">
-		  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-		  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-	  </center>
-  </div>
-	</div>
-	<div class=" col-md-4 col-sm-6 col-xs-12">
-		<!--== Slide ==-->
-		<div class="testimonial-item" style="color: white;">
-		  <img src="assets/img/retails/png/11.png" width="100%">
-		  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-		  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-	  </center>
-  </div>
-	</div>
-	<div class=" col-md-4 col-sm-6 col-xs-12">
-		<!--== Slide ==-->
-		<div class="testimonial-item" style="color: white;">
-		  <img src="assets/img/retails/png/12.png" width="100%">
-		  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-		  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-	  </center>
-  </div>
-	</div>
-	<div class=" col-md-4 col-sm-6 col-xs-12">
-		<!--== Slide ==-->
-		<div class="testimonial-item" style="color: white;">
-		  <img src="assets/img/retails/png/13.png" width="100%">
-		  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-		  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-	  </center>
-  </div>
-	</div>
-	<div class=" col-md-4 col-sm-6 col-xs-12">
-		<!--== Slide ==-->
-		<div class="testimonial-item" style="color: white;">
-		  <img src="assets/img/retails/png/14.png" width="100%">
-		  <!-- <center><h4 class="mt-2 font-600" style="color: white; font-family: Poppins;">Kadai Chicken Curry Paste</h4> -->
-		  <!-- <p class="font-400 mt-20" style="color: white; font-family: Poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-	  </center>
-  </div>
-	</div>
+			<div class="card">
+			   <div class="img">
+				  <img src="assets/img/spices/1.png" alt="">
+			   </div>
+			</div>
+			<div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/2.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/3.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/4.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/5.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/6.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/7.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/8.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/9.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/10.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/11.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/12.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/13.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/14.png" alt="">
+				</div>
+			 </div>
+<!------------Retail---------------------->
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/1.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/2.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/3.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/4.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/5.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/6.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/7.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/8.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/9.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/10.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/11.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/12.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/13.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/14.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/15.png" alt="">
+				</div>
+			 </div>
+	 
+	 
+				 
+	
+	
+		 </div>
+		  
 
 
 
 
+	
+	
 
-
-
-		
-		
-
-	  </div>
-	</div>
 	<br><br>
 	<center>  <a href="products.html" class="btn btn-gradient color-2 btn-lg btn-square" style="border-radius: 8px;">View More</a>
 	</center>
@@ -1329,7 +1216,6 @@
   <!--== Go to Top End ==-->
 
 </div>
-<!--== Wrapper End ==-->
 
 <!--== Javascript Plugins ==-->
 <script type="text/javascript">
@@ -1430,25 +1316,26 @@
 		})
 	})
 </script>
-<script>
-	$(document).ready(function() {
-  var slideIndex = 0;
-  showSlides();
 
-  function showSlides() {
-    var slides = $(".slide");
-    for (var i = 0; i < slides.length; i++) {
-      slides[i].classList.remove("active");
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-      slideIndex = 1;
-    }
-    slides[slideIndex-1].classList.add("active");
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
-  }
-});
-</script>
+<script>
+	$(".slider").owlCarousel({
+	  loop: true,
+	  autoplay: true,
+	  autoplayTimeout: 2000, //2000ms = 2s;
+	  autoplayHoverPause: true,
+	  responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+	}});
+ </script>
+  
 
 <script src="assets/js/jquery.min.js"></script>
 <!--<script src="assets/js/smoothscroll.js"></script>-->
